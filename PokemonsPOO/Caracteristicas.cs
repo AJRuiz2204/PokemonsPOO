@@ -131,6 +131,7 @@ namespace PokemonsPOO
         public class Pokedex
         {
             private List<Caracteristicas> Pokemons = new List<Caracteristicas>();
+            private List<TipoPokemon> TiposDePokemons = new List<TipoPokemon>();
 
             public void aggPokemon(Caracteristicas pokemon)
             {
@@ -155,6 +156,10 @@ namespace PokemonsPOO
                 }
             }
 
+            public List<TipoPokemon> ObtenerTiposDisponibles()
+            {
+                return TiposDePokemons;
+            }
 
 
             public void MostrarTiposDisponibles()
